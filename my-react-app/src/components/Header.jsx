@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import gonavi  from '../assets/gonavi-icon.png'
 import {FaBars, FaTimes, FaLinkedin, FaGithub} from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
@@ -9,8 +9,6 @@ const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
     const handleClick = () => setShowMenu(!showMenu)
     
-
-
   return (
     <header className="bg-primary fixed w-full h-[80px] flex justify-between items-center px-4 font-bold">
       {/* Logo */}
@@ -22,16 +20,14 @@ const Header = () => {
       {/* Menu */}
       <div className="text-tertiary">
         <ul className="hidden md:flex">
-          <li className="transition ease-in-out hover:text-quinary">
-            Inicio
-          </li>
+          <li className="transition ease-in-out hover:text-quinary">Inicio</li>
           <li>Funciones</li>
           <li>Proyectos</li>
           <li>Acerca de</li>
           <li>Contactanos</li>
         </ul>
       </div>
-      {/* Fabar */}
+      {/* Bar */}
       <div onClick={handleClick} className="md:hidden text-tertiary z-10">
         {!showMenu ? <FaBars /> : <FaTimes />}
       </div>
@@ -54,11 +50,11 @@ const Header = () => {
         </ul>
       </div>
       {/* Social Media */}
-      <div className="hidden md:flex fixed flex-col top-[35%] left-0 text-primary">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 text-primary">
         <ul>
           <li className="w-[160px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ">
             <a
-              className="flex justify-between w-full items-center"
+              className="flex justify-between w-full items-center transition ease-in-out  hover:text-tertiary"
               href="https://www.linkedin.com/in/carlos-eduardo-gonzalez-henriquez/"
               target="_blank"
               rel="noreferrer"
@@ -69,7 +65,7 @@ const Header = () => {
           </li>
           <li className="w-[160px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ">
             <a
-              className="flex justify-between w-full items-center"
+              className="flex justify-between w-full items-center transition ease-in-out  hover:text-tertiary"
               href="https://github.com/cegh2001"
               target="_blank"
               rel="noreferrer"
@@ -80,7 +76,7 @@ const Header = () => {
           </li>
           <li className="w-[160px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ">
             <a
-              className="flex justify-between w-full items-center"
+              className="flex justify-between w-full items-center transition ease-in-out  hover:text-tertiary"
               href="mailto:cargonzalez0601@gmail.com"
               target="_blank"
               rel="noreferrer"
