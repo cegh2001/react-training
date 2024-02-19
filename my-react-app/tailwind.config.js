@@ -10,6 +10,9 @@ export default {
         quaternary: "#5097FF", // azul cielo
         quinary: "#EBF747", // amarillo fosforecente
       },
+      fontFamily: {
+        anta: ["Anta", "sans-serif"],
+      },
     },
   },
   plugins: [],
