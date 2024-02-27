@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="relative bg-primary w-full h-[80px] flex justify-between items-center px-4 font-bold">
       {/* Logo */}
-      <div className="flex transition ease-in-out text-tertiary hover:text-quinary">
+      <div className="flex transition ease-in-out text-tertiary hover:text-quinary duration-500">
         <img src={gonavi} alt="logo" style={{ width: "" }} />
         <h1 className="ml-1"> T </h1>
         <h1 className=" ml-0.5"> I </h1>
@@ -49,7 +49,7 @@ const Header = () => {
         </ul>
       </div>
       {/* Social Media */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 text-quinary">
+      <div className="hidden xl:flex fixed flex-col top-[35%] left-0 text-quinary">
         <ul>
           <li className="w-[160px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ">
             <a

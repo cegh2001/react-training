@@ -2,7 +2,10 @@
 import About from './components/About';
 import Header from './components/Header'
 import Home from './components/Home'
+import Functions from './components/Functions'
 import { MenuProvider } from './hooks/MenuContext';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Functions />
+      <Projects />
+      <Contact  />
     </MenuProvider>
     </div>
     
